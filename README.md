@@ -5,6 +5,7 @@ cloudsql-status es un proyecto base Python, para actualizar el estado de una bd 
 ## Pre requisitos
 
 Crear una cloud function con trigger de pub/sub [documentación](https://cloud.google.com/functions/docs/calling/pubsub) para que se gatille al recibir un evento de un tópico "x". Debe tener también creada una cuenta de servicio con rol "CloudSql Editor", asignada al scope en donde desea ejecutar la solución, al Folder, por ejemplo.
+La cuenta de servicio debe estar en las variables de entorno de la fnc, como json
 
 
 ## Uso
